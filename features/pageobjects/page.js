@@ -12,4 +12,9 @@ export default class Page {
     open (path) {
         return browser.url(`${path}`)
     }
+
+    async elementShouldDisplayed(elem, timeout = 5000) {
+       const el = (typeof elem === 'string') ? await $(elem) : elem;
+       await expect(el).toBeDisplayed({ timeout });
+    }
 }

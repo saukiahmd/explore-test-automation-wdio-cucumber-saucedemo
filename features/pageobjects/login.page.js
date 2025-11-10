@@ -1,6 +1,7 @@
 import { $ } from '@wdio/globals'
 import Page from './page.js';
 
+
 /**
  * sub page containing specific selectors and methods for a specific page
  */
@@ -9,7 +10,7 @@ class LoginPage extends Page {
      * define selectors using getter methods
      */
     get inputUsername () {
-        return $('#username');
+        return $('#user-name');
     }
 
     get inputPassword () {
@@ -17,7 +18,15 @@ class LoginPage extends Page {
     }
 
     get btnSubmit () {
-        return $('button[type="submit"]');
+        return $('#login-button');
+    }
+
+    get containerProducts () {
+        return $('#inventory_container.inventory_container');
+    }
+    
+    get errorMessage(){
+        return $('h3[data-test="error"]');
     }
 
     /**
@@ -28,6 +37,20 @@ class LoginPage extends Page {
         await this.inputUsername.setValue(username);
         await this.inputPassword.setValue(password);
         await this.btnSubmit.click();
+    }
+
+    async verifySuccessLogin() {
+        await super.elementShouldDisplayed(this.containerProducts);
+    }
+
+    async verifyErrorLockedOutUser() {
+        await super.elementShouldDisplayed(this.errorMessage);
+        await expect(this.errorMessage).toHaveText('Epic sadface: Sorry, this user has been locked out.');
+    }
+    
+    async verifyErrorInvalidUser() {
+        await super.elementShouldDisplayed(this.errorMessage);
+        await expect(this.errorMessage).toHaveText('Epic sadface: Username and password do not match any user in this service');
     }
 
     /**

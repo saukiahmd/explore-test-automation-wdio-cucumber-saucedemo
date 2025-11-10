@@ -1,10 +1,4 @@
 # Feature: Login functionality on SauceDemo 2
-  
-#   @negative
-#   Scenario: Login with invalid password
-#     Given I am on the SauceDemo login page
-#     When I login using username "standard_user" and password "wrong_password"
-#     Then I should see an error message "Epic sadface: Username and password do not match any user in this service"
 
 #   @negative
 #   Scenario: Login with invalid username
@@ -13,7 +7,13 @@
 #     Then I should see an error message "Epic sadface: Username and password do not match any user in this service"
 
 #   @negative
-#   Scenario: Login with locked out user
+#   Scenario: Login with empty username and empty password
 #     Given I am on the SauceDemo login page
-#     When I login using username "locked_out_user" and password "secret_sauce"
-#     Then I should see an error message "Epic sadface: Sorry, this user has been locked out."
+#     When I login using username "" and password ""
+#     Then I should see an error message "Epic sadface: Username is required"
+
+#   @negative
+#   Scenario: Login with empty password only
+#     Given I am on the SauceDemo login page
+#     When I login using username "standard_user" and password ""
+#     Then I should see an error message "Epic sadface: Password is required"
