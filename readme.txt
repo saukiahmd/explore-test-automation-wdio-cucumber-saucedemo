@@ -1,4 +1,10 @@
-<p align="center"> <img src="https://img.shields.io/badge/WebdriverIO-v8-red" /> <img src="https://img.shields.io/badge/Cucumber-BDD-green" /> <img src="https://img.shields.io/badge/Node.js-18+-yellow" /> <img src="https://img.shields.io/badge/Platform-SauceDemo-blue" /> </p>
+<p align="center">
+  <img src="https://img.shields.io/badge/WebdriverIO-v8-red" />
+  <img src="https://img.shields.io/badge/Cucumber-BDD-green" />
+  <img src="https://img.shields.io/badge/Node.js-18+-yellow" />
+  <img src="https://img.shields.io/badge/Platform-SauceDemo-blue" />
+</p>
+
 
 # 🚀 Web Automation Testing with WebdriverIO, Cucumber, and SauceDemo
 
