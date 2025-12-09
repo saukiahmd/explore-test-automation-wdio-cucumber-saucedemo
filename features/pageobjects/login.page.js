@@ -53,6 +53,15 @@ class LoginPage extends Page {
         await expect(this.errorMessage).toHaveText('Epic sadface: Username and password do not match any user in this service');
     }
 
+    async verifyErrorFieldRequired(errorMessage) {
+        await super.elementShouldDisplayed(this.errorMessage);
+        if (errorMessage === 'Epic sadface: Username is required') {
+            await expect(this.errorMessage).toHaveText('Epic sadface: Username is required');
+        } else if (errorMessage === 'Epic sadface: Password is required') {
+            await expect(this.errorMessage).toHaveText('Epic sadface: Password is required');
+        }
+    }
+
     /**
      * overwrite specific options to adapt it to page object
      */

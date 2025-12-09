@@ -24,9 +24,14 @@ Then(/I should see an error message "([^"]*)"/, async (errorMessage) => {
         case 'Epic sadface: Sorry, this user has been locked out.':
             await pages.login.verifyErrorLockedOutUser();
             break;
-
         case 'Epic sadface: Username and password do not match any user in this service':
             await pages.login.verifyErrorInvalidUser();
+            break;
+        case 'Epic sadface: Username is required':
+            await pages.login.verifyErrorFieldRequired();
+            break;
+        case 'Epic sadface: Password is required':
+            await pages.login.verifyErrorFieldRequired(errorMessage);
             break;
 
         default:

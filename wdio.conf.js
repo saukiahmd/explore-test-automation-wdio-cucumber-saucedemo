@@ -50,7 +50,11 @@ export const config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-        browserName: 'chrome'
+        browserName: 'chrome',
+        acceptInsecureCerts: true, // Mengizinkan sertifikat yang tidak aman
+            'goog:chromeOptions': {
+                args: ['--headless', '--disable-gpu', '--window-size=1920x1080'] // Opsi Chrome (headless)
+            }
     }],
 
     //
