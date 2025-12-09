@@ -32,9 +32,11 @@ Project ini dibuat untuk menunjukkan kemampuan saya dalam:
 ---
 
 🧪 Contoh Feature (Gherkin)
-Feature: Login functionality on SauceDemo
 
-  Background: 
+```gherkin
+Feature: Login functionality on SauceDemo 1
+
+  Background:
     Given I am on the SauceDemo login page
 
   @positive
@@ -43,10 +45,15 @@ Feature: Login functionality on SauceDemo
     Then I should be redirected to the products page
 
     Examples:
-      | username       | password      |
-      | standard_user  | secret_sauce  |
+      |  username      |  password      |
+      |  standard_user |  secret_sauce  |
+```
+
+---
 
 🧩 Contoh Step Definition
+
+```gherkin
 import { Given, When, Then } from '@wdio/cucumber-framework';
 import { expect, $ } from '@wdio/globals'
 
@@ -62,17 +69,32 @@ When(/I login using username "([^"]*)" and password "([^"]*)"/, async (username,
 Then('I should be redirected to the products page', async () => {
     await pages.login.verifySuccessLogin();
 });
+```
+---
 
 ⚙️ Instalasi
+
 Pastikan Node.js v18+ sudah terpasang.
 
+```bash
 npm install
+```
+
+---
 
 ▶️ Menjalankan Automation
-Menjalankan semua test : npx wdio run wdio.conf.js
 
-Menjalankan 1 feature : npx wdio run wdio.conf.js --spec ./features/login/login.feature
+Menjalankan semua test 
+```bash
+npx wdio run wdio.conf.js
+```
 
+Menjalankan 1 feature 
+```bash
+npx wdio run wdio.conf.js --spec ./features/login/login.feature
+```
+
+---
 
 📊 Allure Report Preview
 
@@ -82,9 +104,14 @@ Tambahkan screenshot kamu di sini:
   <img src="https://github.com/USERNAME/REPO/blob/main/assets/allure-preview.png" width="600"/>
 </p>
 
+---
+
 ▶️ Cara Generate Allure Report
+```bash
 npx allure generate allure-results --clean
 npx allure open
+```
+---
 
 🎥 Demo Video
 
