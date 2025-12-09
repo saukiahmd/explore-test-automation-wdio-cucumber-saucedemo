@@ -31,28 +31,6 @@ Project ini dibuat untuk menunjukkan kemampuan saya dalam:
 
 ---
 
-📁 Project Structure
-features
-├── features
-│ ├── login
-│ │ ├── login1.feature
-│ │ ├── login2.feature
-│ │ ├── login3.feature
-│ ├── productListPage
-│ ├── productListPage1.feature
-│ ├── productListPage2.feature
-│
-├── pageobjects
-│ ├── login.page.js
-│ ├── page.js
-│ ├── productListPage.page.js
-│
-├── step-definitions
-├── login.js
-├── productListPage.js
-
----
-
 🧪 Contoh Feature (Gherkin)
 Feature: Login functionality on SauceDemo
 
