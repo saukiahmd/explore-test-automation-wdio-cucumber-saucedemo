@@ -101,7 +101,7 @@ npx wdio run wdio.conf.js --spec ./features/login/login.feature
 Tambahkan screenshot kamu di sini:
 
 <p align="center">
-  <img src="[https://github.com/saukiahmd/explore-test-automation-wdio-cucumber-sucedemo/blob/main/html-result/10_12_2025.png]" width="600"/>
+  <img src="https://raw.githubusercontent.com/saukiahmd/explore-test-automation-wdio-cucumber-saucedemo/a37fb190771a7480183df5a667b0f2f5520f7ad0/html-result/10_12_2025.png" width="1000"/>
 </p>
 
 ---
