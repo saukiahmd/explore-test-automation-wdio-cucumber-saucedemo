@@ -115,7 +115,7 @@ npx allure open
 
 <p align="center">
   <a href="https://raw.githubusercontent.com/saukiahmd/explore-test-automation-wdio-cucumber-saucedemo/ffbb485776ebafd3993812a350a89b61b84dbfc0/html-result/running-automation.mp4">
-    <img src="https://raw.githubusercontent.com/saukiahmd/explore-test-automation-wdio-cucumber-saucedemo/37fec221ce4f321204479989393702aff6226808/html-result/thumbnail.jpg" width="600"/>
+    <img src="https://raw.githubusercontent.com/saukiahmd/explore-test-automation-wdio-cucumber-saucedemo/37fec221ce4f321204479989393702aff6226808/html-result/thumbnail.jpg" width="1000"/>
   </a>
 </p>
 
