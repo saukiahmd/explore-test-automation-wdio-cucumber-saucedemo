@@ -53,7 +53,8 @@ export const config = {
         browserName: 'chrome',
         acceptInsecureCerts: true, // Mengizinkan sertifikat yang tidak aman
             'goog:chromeOptions': {
-                args: ['--headless', '--disable-gpu', '--window-size=1920x1080'] // Opsi Chrome (headless)
+                args: ['--headless', '--disable-gpu', '--window-size=1920,1080'] // Opsi Chrome (headless)
+                // args: ['--start-maximized'] // Opsi Chrome (tanpa headless)
             }
     }],
 
