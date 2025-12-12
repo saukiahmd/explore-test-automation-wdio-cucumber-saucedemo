@@ -8,7 +8,8 @@ const pages = {
 }
 
 Given('I am on the SauceDemo login page', async () => {
-    await pages.login.open()
+    await pages.login.open();
+    await pages.login.verifyLogin();
 });
 
 When(/I login using username "([^"]*)" and password "([^"]*)"/, async (username, password) => {
