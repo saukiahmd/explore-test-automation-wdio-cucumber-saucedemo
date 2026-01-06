@@ -114,8 +114,7 @@ npx allure open
 🎥 Demo Video
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/saukiahmd/explore-test-automation-wdio-cucumber-saucedemo/ffbb485776ebafd3993812a350a89b61b84dbfc0/html-result/running-automation.mp4">
-    <img src="https://raw.githubusercontent.com/saukiahmd/explore-test-automation-wdio-cucumber-saucedemo/37fec221ce4f321204479989393702aff6226808/html-result/thumbnail.jpg" width="1000"/>
+    <img src="https://raw.githubusercontent.com/saukiahmd/explore-test-automation-wdio-cucumber-saucedemo/2d636800f43cb1c71df4d0a2f394acc5f9ad04a5/html-result/running-automation.gif" alt="running-automation.gif" width="1000"/>
   </a>
 </p>
 
